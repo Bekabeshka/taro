@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  MyTarot
 //
-//  Created by bekabeshka on 04.11.2023.
+//  Created by bekabeshka on 05.11.2023.
 //
 
 import SwiftUI
