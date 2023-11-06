@@ -10,10 +10,12 @@ import SwiftUI
 struct PrimaryButtonViewData {
     let text: String
     let iconName: String?
+    let action: (() -> Void)?
     
-    init(text: String, iconName: String? = nil) {
+    init(text: String, iconName: String? = nil, action: (() -> Void)? = nil) {
         self.text = text
         self.iconName = iconName
+        self.action = action
     }
 }
 
@@ -22,7 +24,7 @@ struct PrimaryButton: View {
     
     var body: some View {
         Button {
-            print("Sign In with Apple")
+            viewData.action?()
         } label: {
             HStack(spacing: 12) {
                 if let iconName = viewData.iconName {
