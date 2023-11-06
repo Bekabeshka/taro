@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AuthenticationServices
 
 struct AuthorizationView: View {
     var body: some View {
@@ -13,10 +14,16 @@ struct AuthorizationView: View {
             Color.primaryBlack.ignoresSafeArea()
             VStack(spacing: 12) {
                 Spacer()
-                PrimaryButton(viewData: PrimaryButtonViewData(text: "Sign In with Apple", iconName: "apple-logo"))
-                    .background(Color.primaryWhite)
-                    .foregroundColor(.primaryBlack)
-                    .cornerRadius(.cornerRadius)
+                PrimaryButton(viewData: PrimaryButtonViewData(
+                    text: "Sign In with Apple",
+                    iconName: "apple-logo",
+                    action: {
+                        appleAuthorize()
+                    }
+                ))
+                .background(Color.primaryWhite)
+                .foregroundColor(.primaryBlack)
+                .cornerRadius(.cornerRadius)
                     
                 PrimaryButton(viewData: PrimaryButtonViewData(text: "Sign In with Apple"))
                     .background(Color.primaryGray)
@@ -25,6 +32,15 @@ struct AuthorizationView: View {
             }
             .padding(Constants.insets)
         }
+    }
+    
+    private func appleAuthorize() {
+        let appleIDProvider = ASAuthorizationAppleIDProvider()
+        let request = appleIDProvider.createRequest()
+        request.requestedScopes = [.fullName, .email]
+        
+        let authorizationController = ASAuthorizationController(authorizationRequests: [request])
+        authorizationController.performRequests()
     }
     
     private enum Constants {
