@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		455F7D132AF937C400E1F62B /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F7D122AF937C400E1F62B /* Color+Hex.swift */; };
+		455F7D152AF9398600E1F62B /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F7D142AF9398600E1F62B /* Color+Theme.swift */; };
+		455F7D172AF93ECB00E1F62B /* CGFloat+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F7D162AF93ECB00E1F62B /* CGFloat+CornerRadius.swift */; };
+		455F7D1A2AF93F1500E1F62B /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F7D192AF93F1500E1F62B /* PrimaryButton.swift */; };
+		455F7D1D2AF93FC500E1F62B /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F7D1C2AF93FC500E1F62B /* AuthorizationView.swift */; };
 		45D240972AF6C35500C5C65F /* MyTarotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D240962AF6C35500C5C65F /* MyTarotApp.swift */; };
 		45D240992AF6C35500C5C65F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D240982AF6C35500C5C65F /* ContentView.swift */; };
 		45D2409B2AF6C35600C5C65F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45D2409A2AF6C35600C5C65F /* Assets.xcassets */; };
@@ -14,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		455F7D122AF937C400E1F62B /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		455F7D142AF9398600E1F62B /* Color+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Theme.swift"; sourceTree = "<group>"; };
+		455F7D162AF93ECB00E1F62B /* CGFloat+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+CornerRadius.swift"; sourceTree = "<group>"; };
+		455F7D192AF93F1500E1F62B /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		455F7D1C2AF93FC500E1F62B /* AuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
 		45D240932AF6C35500C5C65F /* MyTarot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTarot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D240962AF6C35500C5C65F /* MyTarotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTarotApp.swift; sourceTree = "<group>"; };
 		45D240982AF6C35500C5C65F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +42,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		455F7D182AF93EDA00E1F62B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				455F7D162AF93ECB00E1F62B /* CGFloat+CornerRadius.swift */,
+				455F7D122AF937C400E1F62B /* Color+Hex.swift */,
+				455F7D142AF9398600E1F62B /* Color+Theme.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		455F7D1B2AF93F3400E1F62B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				455F7D192AF93F1500E1F62B /* PrimaryButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		455F7D1E2AF93FEF00E1F62B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				45D240982AF6C35500C5C65F /* ContentView.swift */,
+				455F7D1C2AF93FC500E1F62B /* AuthorizationView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		45D2408A2AF6C35500C5C65F = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +89,9 @@
 			isa = PBXGroup;
 			children = (
 				45D240962AF6C35500C5C65F /* MyTarotApp.swift */,
-				45D240982AF6C35500C5C65F /* ContentView.swift */,
+				455F7D1E2AF93FEF00E1F62B /* Screens */,
+				455F7D1B2AF93F3400E1F62B /* View */,
+				455F7D182AF93EDA00E1F62B /* Extension */,
 				45D2409A2AF6C35600C5C65F /* Assets.xcassets */,
 				45D2409C2AF6C35600C5C65F /* Preview Content */,
 			);
@@ -137,8 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				455F7D1A2AF93F1500E1F62B /* PrimaryButton.swift in Sources */,
 				45D240992AF6C35500C5C65F /* ContentView.swift in Sources */,
+				455F7D152AF9398600E1F62B /* Color+Theme.swift in Sources */,
 				45D240972AF6C35500C5C65F /* MyTarotApp.swift in Sources */,
+				455F7D172AF93ECB00E1F62B /* CGFloat+CornerRadius.swift in Sources */,
+				455F7D1D2AF93FC500E1F62B /* AuthorizationView.swift in Sources */,
+				455F7D132AF937C400E1F62B /* Color+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
