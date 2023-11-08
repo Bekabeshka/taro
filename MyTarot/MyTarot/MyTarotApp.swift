@@ -11,7 +11,7 @@ import SwiftUI
 struct MyTarotApp: App {
     var body: some Scene {
         WindowGroup {
-            AuthorizationView()
+            NativeAuthorizationView()
         }
     }
 }

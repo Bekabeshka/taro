@@ -11,7 +11,7 @@ import AuthenticationServices
 struct AuthorizationView: View {
     var body: some View {
         ZStack() {
-            Color.primaryBlack.ignoresSafeArea()
+            Color.Background.black.ignoresSafeArea()
             VStack(spacing: 12) {
                 Spacer()
                 PrimaryButton(viewData: PrimaryButtonViewData(
@@ -21,16 +21,16 @@ struct AuthorizationView: View {
                         appleAuthorize()
                     }
                 ))
-                .background(Color.primaryWhite)
-                .foregroundColor(.primaryBlack)
+                .background(Color.Background.white)
+                .foregroundColor(.Background.black)
                 .cornerRadius(.cornerRadius)
                     
                 PrimaryButton(viewData: PrimaryButtonViewData(text: "Sign In with Apple"))
-                    .background(Color.primaryGray)
-                    .foregroundColor(.primaryWhite)
+                    .background(Color.Background.gray)
+                    .foregroundColor(.Background.white)
                     .cornerRadius(.cornerRadius)
             }
-            .padding(Constants.insets)
+            .padding(.screenInsets)
         }
     }
     
@@ -41,10 +41,6 @@ struct AuthorizationView: View {
         
         let authorizationController = ASAuthorizationController(authorizationRequests: [request])
         authorizationController.performRequests()
-    }
-    
-    private enum Constants {
-        static let insets = EdgeInsets(top: 0, leading: 16, bottom: 24, trailing: 16)
     }
 }
 
