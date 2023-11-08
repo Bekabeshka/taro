@@ -11,7 +11,9 @@ import SwiftUI
 struct MyTarotApp: App {
     var body: some Scene {
         WindowGroup {
-            AuthorizationView()
+//            OtpCodeVerificationView(viewModel: OtpCodeVerificationViewModel())
+//            PhoneNumberView()
+            NativeAuthorizationView()
         }
     }
 }

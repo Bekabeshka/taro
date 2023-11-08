@@ -8,15 +8,35 @@
 import SwiftUI
 
 extension Color {
-    static var primaryBlack: Color {
-        Color(hex: "020202")
+    enum Background {
+        static var black: Color {
+            Color(hex: "020202")
+        }
+        
+        static var white: Color {
+            Color(hex: "FFFFFF")
+        }
+        
+        static var gray: Color {
+            Color(hex: "1E1E1E")
+        }
     }
-    
-    static var primaryWhite: Color {
-        Color(hex: "FFFFFF")
-    }
-    
-    static var primaryGray: Color {
-        Color(hex: "000000").opacity(0.25)
+
+    enum Text {
+        static var white: Color {
+            Color(hex: "FFFFFF")
+        }
+        
+        static var error: Color {
+            Color(hex: "983E31")
+        }
+        
+        static var lightGray: Color {
+            Color(hex: "E6E6E6")
+        }
+        
+        static var gray: Color {
+            Color(hex: "666766")
+        }
     }
 }
