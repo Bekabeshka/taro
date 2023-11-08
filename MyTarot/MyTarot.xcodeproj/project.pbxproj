@@ -19,6 +19,14 @@
 		45B96E642AFAB1AD00F06917 /* OtpCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B96E632AFAB1AC00F06917 /* OtpCodeView.swift */; };
 		45B96E662AFAB1C000F06917 /* OtpCodeBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B96E652AFAB1C000F06917 /* OtpCodeBox.swift */; };
 		45B96E6C2AFBC34E00F06917 /* PhoneNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B96E6B2AFBC34E00F06917 /* PhoneNumberView.swift */; };
+		45B96E772AFBD55B00F06917 /* Sora-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45B96E712AFBD41700F06917 /* Sora-ExtraLight.ttf */; };
+		45B96E782AFBD55B00F06917 /* Sora-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45B96E702AFBD41700F06917 /* Sora-Bold.ttf */; };
+		45B96E792AFBD55B00F06917 /* Sora-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45B96E742AFBD41700F06917 /* Sora-SemiBold.ttf */; };
+		45B96E7A2AFBD55B00F06917 /* Sora-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45B96E752AFBD41700F06917 /* Sora-Thin.ttf */; };
+		45B96E7B2AFBD55B00F06917 /* Sora-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45B96E722AFBD41700F06917 /* Sora-Light.ttf */; };
+		45B96E7C2AFBD55B00F06917 /* Sora-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45B96E6F2AFBD41700F06917 /* Sora-ExtraBold.ttf */; };
+		45B96E7D2AFBD55B00F06917 /* Sora-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45B96E732AFBD41700F06917 /* Sora-Medium.ttf */; };
+		45B96E7E2AFBD55B00F06917 /* Sora-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45B96E6E2AFBD41700F06917 /* Sora-Regular.ttf */; };
 		45D240972AF6C35500C5C65F /* MyTarotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D240962AF6C35500C5C65F /* MyTarotApp.swift */; };
 		45D240992AF6C35500C5C65F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D240982AF6C35500C5C65F /* ContentView.swift */; };
 		45D2409B2AF6C35600C5C65F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45D2409A2AF6C35600C5C65F /* Assets.xcassets */; };
@@ -39,6 +47,15 @@
 		45B96E632AFAB1AC00F06917 /* OtpCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpCodeView.swift; sourceTree = "<group>"; };
 		45B96E652AFAB1C000F06917 /* OtpCodeBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpCodeBox.swift; sourceTree = "<group>"; };
 		45B96E6B2AFBC34E00F06917 /* PhoneNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberView.swift; sourceTree = "<group>"; };
+		45B96E6E2AFBD41700F06917 /* Sora-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-Regular.ttf"; sourceTree = "<group>"; };
+		45B96E6F2AFBD41700F06917 /* Sora-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-ExtraBold.ttf"; sourceTree = "<group>"; };
+		45B96E702AFBD41700F06917 /* Sora-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-Bold.ttf"; sourceTree = "<group>"; };
+		45B96E712AFBD41700F06917 /* Sora-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-ExtraLight.ttf"; sourceTree = "<group>"; };
+		45B96E722AFBD41700F06917 /* Sora-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-Light.ttf"; sourceTree = "<group>"; };
+		45B96E732AFBD41700F06917 /* Sora-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-Medium.ttf"; sourceTree = "<group>"; };
+		45B96E742AFBD41700F06917 /* Sora-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-SemiBold.ttf"; sourceTree = "<group>"; };
+		45B96E752AFBD41700F06917 /* Sora-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-Thin.ttf"; sourceTree = "<group>"; };
+		45B96E762AFBD47A00F06917 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		45D240932AF6C35500C5C65F /* MyTarot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTarot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D240962AF6C35500C5C65F /* MyTarotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTarotApp.swift; sourceTree = "<group>"; };
 		45D240982AF6C35500C5C65F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,6 +123,21 @@
 			path = Otp;
 			sourceTree = "<group>";
 		};
+		45B96E6D2AFBD40C00F06917 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				45B96E702AFBD41700F06917 /* Sora-Bold.ttf */,
+				45B96E6F2AFBD41700F06917 /* Sora-ExtraBold.ttf */,
+				45B96E712AFBD41700F06917 /* Sora-ExtraLight.ttf */,
+				45B96E722AFBD41700F06917 /* Sora-Light.ttf */,
+				45B96E732AFBD41700F06917 /* Sora-Medium.ttf */,
+				45B96E6E2AFBD41700F06917 /* Sora-Regular.ttf */,
+				45B96E742AFBD41700F06917 /* Sora-SemiBold.ttf */,
+				45B96E752AFBD41700F06917 /* Sora-Thin.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		45D2408A2AF6C35500C5C65F = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +157,8 @@
 		45D240952AF6C35500C5C65F /* MyTarot */ = {
 			isa = PBXGroup;
 			children = (
+				45B96E762AFBD47A00F06917 /* Info.plist */,
+				45B96E6D2AFBD40C00F06917 /* Fonts */,
 				45B96E602AFAB17B00F06917 /* Authorization */,
 				455F7D1F2AF9438D00E1F62B /* MyTarot.entitlements */,
 				45D240962AF6C35500C5C65F /* MyTarotApp.swift */,
@@ -203,8 +237,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45B96E7D2AFBD55B00F06917 /* Sora-Medium.ttf in Resources */,
+				45B96E782AFBD55B00F06917 /* Sora-Bold.ttf in Resources */,
 				45D2409E2AF6C35600C5C65F /* Preview Assets.xcassets in Resources */,
+				45B96E772AFBD55B00F06917 /* Sora-ExtraLight.ttf in Resources */,
+				45B96E7E2AFBD55B00F06917 /* Sora-Regular.ttf in Resources */,
 				45D2409B2AF6C35600C5C65F /* Assets.xcassets in Resources */,
+				45B96E7A2AFBD55B00F06917 /* Sora-Thin.ttf in Resources */,
+				45B96E7C2AFBD55B00F06917 /* Sora-ExtraBold.ttf in Resources */,
+				45B96E792AFBD55B00F06917 /* Sora-SemiBold.ttf in Resources */,
+				45B96E7B2AFBD55B00F06917 /* Sora-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +404,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTarot/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -399,6 +442,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTarot/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
