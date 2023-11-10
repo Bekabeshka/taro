@@ -53,3 +53,23 @@ struct AuthorizationView_Previews: PreviewProvider {
         AuthorizationView()
     }
 }
+
+struct AuthorizationsView_Previews: PreviewProvider {
+    static var previews: some View {
+        ZStack {
+            Color.black.ignoresSafeArea()
+            ZStack {
+                PrimaryButton(viewData: PrimaryButtonViewData(text: "7 days 18 hours"))
+                    .background(LinearGradient(
+                        colors: [.gradientRed, .gradientOrange, .gradientPink],
+                        startPoint: .bottomLeading,
+                        endPoint: .topTrailing
+                    )
+                    )
+                    .foregroundColor(.primaryWhite)
+                    .cornerRadius(.cornerRadius)
+            }
+            .padding(EdgeInsets(top: 0, leading: 16, bottom: 24, trailing: 16))
+        }
+    }
+}
