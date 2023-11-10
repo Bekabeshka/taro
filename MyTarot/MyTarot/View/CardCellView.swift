@@ -49,8 +49,8 @@ struct CardCellView: View {
                         .foregroundColor(.textGray)
                     Spacer()
                     RectangleBadgeView(viewData: viewData.badge)
-                        .foregroundColor(viewData.isDisabled ? .primaryDisabledText :.primaryGreen)
-                        .background(viewData.isDisabled ? Color.primaryDisabled : Color.secondaryGreen)
+                        .foregroundColor(viewData.isDisabled ? .Background.yellow : .Background.green)
+                        .background(viewData.isDisabled ? Color.Background.yellow : Color.Background.green)
                         .cornerRadius(.rectangleBadgeCR)
                     
                 }
