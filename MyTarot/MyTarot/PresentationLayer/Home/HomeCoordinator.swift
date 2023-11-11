@@ -10,14 +10,14 @@ import SwiftUI
 
 final class HomeCoordinator: Coordinator {
     var children: [Coordinator] = []
-    private let navigationController: UINavigationController
+    let router: Router
     
-    init(navigationController: UINavigationController) {
-        self.navigationController = navigationController
+    init(router: Router) {
+        self.router = router
     }
     
     func start() {
         let homeViewController = HomeView().viewController
-        navigationController.viewControllers = [homeViewController]
+        router.setRootModule(homeViewController)
     }
 }

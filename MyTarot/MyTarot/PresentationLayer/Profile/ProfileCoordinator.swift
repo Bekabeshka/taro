@@ -9,14 +9,14 @@ import UIKit
 
 final class ProfileCoordinator: Coordinator {
     var children: [Coordinator] = []
-    private let navigationController: UINavigationController
+    let router: Router
     
-    init(navigationController: UINavigationController) {
-        self.navigationController = navigationController
+    init(router: Router) {
+        self.router = router
     }
     
     func start() {
         let profileViewController = ProfileView().viewController
-        navigationController.viewControllers = [profileViewController]
+        router.setRootModule(profileViewController)
     }
 }

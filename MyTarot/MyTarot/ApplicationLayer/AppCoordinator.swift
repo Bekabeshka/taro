@@ -11,10 +11,12 @@ import SwiftUI
 final class AppCoordinator: Coordinator {
     var children: [Coordinator] = []
     let tabBarController: UITabBarController
+    private let coordinatorsFactory: CoordinatorsFactory
     private var preparedViewControllers: [UIViewController] = []
     
-    init() {
-        tabBarController = AppTabBarController()
+    init(coordinatorsFactory: CoordinatorsFactory) {
+        self.tabBarController = AppTabBarController()
+        self.coordinatorsFactory = coordinatorsFactory
     }
     
     func start() {
@@ -25,39 +27,53 @@ final class AppCoordinator: Coordinator {
         tabBarController.viewControllers = preparedViewControllers
     }
     
-    private func configureHomeCoordinator() -> HomeCoordinator {
-        let navigationController = UINavigationController()
-        navigationController.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "home-tab"), tag: 0)
-        let coordinator = HomeCoordinator(navigationController: navigationController)
+    private func configureHomeCoordinator() -> Coordinator {
+        let coordinator = coordinatorsFactory.makeHomeCoordinator()
         coordinator.start()
         
         add(coordinator)
-        preparedViewControllers.append(navigationController)
+        preparedViewControllers.append(coordinator.router.toPresent)
         
         return coordinator
     }
     
     private func configureHistoryCoordinator() -> HistoryCoordinator {
-        let navigationController = UINavigationController()
-        navigationController.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "history-tab"), tag: 1)
-        let coordinator = HistoryCoordinator(navigationController: navigationController)
+        let coordinator = coordinatorsFactory.makeHistoryCoordinator()
         coordinator.start()
         
         add(coordinator)
-        preparedViewControllers.append(navigationController)
+        preparedViewControllers.append(coordinator.router.toPresent)
         
         return coordinator
     }
     
     private func configureProfileCoordinator() -> ProfileCoordinator {
-        let navigationController = UINavigationController()
-        navigationController.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "profile-tab"), tag: 2)
-        let coordinator = ProfileCoordinator(navigationController: navigationController)
+        let coordinator = coordinatorsFactory.makeProfileCoordinator()
         coordinator.start()
         
         add(coordinator)
-        preparedViewControllers.append(navigationController)
+        preparedViewControllers.append(coordinator.router.toPresent)
         
         return coordinator
+    }
+}
+
+final class CoordinatorsFactory {
+    func makeHomeCoordinator() -> HomeCoordinator {
+        let navigationController = UINavigationController()
+        navigationController.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "home-tab"), tag: 0)
+        return HomeCoordinator(router: NavigationRouter(navigationController: navigationController))
+    }
+    
+    func makeHistoryCoordinator() -> HistoryCoordinator {
+        let navigationController = UINavigationController()
+        navigationController.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "history-tab"), tag: 1)
+        return HistoryCoordinator(router: NavigationRouter(navigationController: navigationController))
+    }
+    
+    func makeProfileCoordinator() -> ProfileCoordinator {
+        let navigationController = UINavigationController()
+        navigationController.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "profile-tab"), tag: 2)
+        return ProfileCoordinator(router: NavigationRouter(navigationController: navigationController))
     }
 }

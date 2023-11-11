@@ -10,14 +10,14 @@ import SwiftUI
 
 final class HistoryCoordinator: Coordinator {
     var children: [Coordinator] = []
-    private let navigationController: UINavigationController
+    let router: Router
     
-    init(navigationController: UINavigationController) {
-        self.navigationController = navigationController
+    init(router: Router) {
+        self.router = router
     }
     
     func start() {
         let historyViewController = HistoryView().viewController
-        navigationController.viewControllers = [historyViewController]
+        router.setRootModule(historyViewController)
     }
 }

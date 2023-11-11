@@ -17,17 +17,12 @@ final class SceneDelegate: UIResponder, UISceneDelegate {
         window = UIWindow(windowScene: windowScene)
         window?.overrideUserInterfaceStyle = .dark
 
-        appCoordinator = AppCoordinator()
+        appCoordinator = AppCoordinator(coordinatorsFactory: CoordinatorsFactory())
         appCoordinator.start()
 
         window?.rootViewController = appCoordinator.tabBarController
         window?.makeKeyAndVisible()
     }
-}
-
-struct TabBarButton {
-    let iconName: String
-    let viewController: UIViewController
 }
 
 struct HomeView: View {

@@ -24,6 +24,9 @@
 		456688632AFFACA6009B9CB7 /* HistoryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456688622AFFACA6009B9CB7 /* HistoryCoordinator.swift */; };
 		456688662AFFACBC009B9CB7 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456688652AFFACBC009B9CB7 /* ProfileCoordinator.swift */; };
 		456688682AFFACF7009B9CB7 /* View+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456688672AFFACF7009B9CB7 /* View+ViewController.swift */; };
+		4566886A2AFFAF22009B9CB7 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456688692AFFAF22009B9CB7 /* Router.swift */; };
+		4566886C2AFFAF77009B9CB7 /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566886B2AFFAF77009B9CB7 /* NavigationRouter.swift */; };
+		4566886E2AFFB46D009B9CB7 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566886D2AFFB46D009B9CB7 /* Presentable.swift */; };
 		45B96E5D2AFA90A000F06917 /* EdgeInsets+ScreenPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B96E5C2AFA90A000F06917 /* EdgeInsets+ScreenPadding.swift */; };
 		45B96E5F2AFA90FE00F06917 /* OtpCodeVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B96E5E2AFA90FE00F06917 /* OtpCodeVerificationView.swift */; };
 		45B96E622AFAB18F00F06917 /* OtpCodeVerificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B96E612AFAB18F00F06917 /* OtpCodeVerificationViewModel.swift */; };
@@ -62,6 +65,9 @@
 		456688622AFFACA6009B9CB7 /* HistoryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCoordinator.swift; sourceTree = "<group>"; };
 		456688652AFFACBC009B9CB7 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
 		456688672AFFACF7009B9CB7 /* View+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ViewController.swift"; sourceTree = "<group>"; };
+		456688692AFFAF22009B9CB7 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		4566886B2AFFAF77009B9CB7 /* NavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
+		4566886D2AFFB46D009B9CB7 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
 		45B96E5C2AFA90A000F06917 /* EdgeInsets+ScreenPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EdgeInsets+ScreenPadding.swift"; sourceTree = "<group>"; };
 		45B96E5E2AFA90FE00F06917 /* OtpCodeVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpCodeVerificationView.swift; sourceTree = "<group>"; };
 		45B96E612AFAB18F00F06917 /* OtpCodeVerificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpCodeVerificationViewModel.swift; sourceTree = "<group>"; };
@@ -126,8 +132,8 @@
 		4566884C2AFE6D35009B9CB7 /* ApplicationLayer */ = {
 			isa = PBXGroup;
 			children = (
-				4566884F2AFE6D4D009B9CB7 /* SceneDelegate.swift */,
 				4566884D2AFE6D45009B9CB7 /* AppDelegate.swift */,
+				4566884F2AFE6D4D009B9CB7 /* SceneDelegate.swift */,
 				456688582AFF841A009B9CB7 /* AppCoordinator.swift */,
 				4566885A2AFFAC0E009B9CB7 /* TabBarController */,
 			);
@@ -137,6 +143,9 @@
 		456688532AFF83C3009B9CB7 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				4566886D2AFFB46D009B9CB7 /* Presentable.swift */,
+				456688692AFFAF22009B9CB7 /* Router.swift */,
+				4566886B2AFFAF77009B9CB7 /* NavigationRouter.swift */,
 				456688542AFF83D0009B9CB7 /* Coordinator.swift */,
 			);
 			path = Navigation;
@@ -345,13 +354,16 @@
 			files = (
 				45B96E5F2AFA90FE00F06917 /* OtpCodeVerificationView.swift in Sources */,
 				456688682AFFACF7009B9CB7 /* View+ViewController.swift in Sources */,
+				4566886A2AFFAF22009B9CB7 /* Router.swift in Sources */,
 				45B96E5D2AFA90A000F06917 /* EdgeInsets+ScreenPadding.swift in Sources */,
 				455F7D1A2AF93F1500E1F62B /* PrimaryButton.swift in Sources */,
 				4566885C2AFFAC1B009B9CB7 /* TabBarAnimatedTransition.swift in Sources */,
 				4566884E2AFE6D45009B9CB7 /* AppDelegate.swift in Sources */,
 				456688602AFFAC8F009B9CB7 /* HomeCoordinator.swift in Sources */,
+				4566886E2AFFB46D009B9CB7 /* Presentable.swift in Sources */,
 				45D240992AF6C35500C5C65F /* ContentView.swift in Sources */,
 				455F7D152AF9398600E1F62B /* Color+Theme.swift in Sources */,
+				4566886C2AFFAF77009B9CB7 /* NavigationRouter.swift in Sources */,
 				455F7D3B2AFA795000E1F62B /* NativeAuthorizationView.swift in Sources */,
 				456688502AFE6D4D009B9CB7 /* SceneDelegate.swift in Sources */,
 				45B96E662AFAB1C000F06917 /* OtpCodeBox.swift in Sources */,
