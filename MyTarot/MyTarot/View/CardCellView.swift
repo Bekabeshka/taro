@@ -24,9 +24,9 @@ struct CardCellView: View {
                 HStack {
                     Text(viewData.header)
                         .font(Font.custom("Sora", size: 28).weight(.bold))
-                        .lineLimit(3...)
-                        .foregroundColor(.primaryWhite)
-                        .padding(EdgeInsets(top: 21, leading: 0, bottom: 21, trailing: 0))
+                        .foregroundColor(Color.Text.white)
+                        .padding(EdgeInsets(top: 21, leading: 24, bottom: 0, trailing: 0))
+
                     Spacer()
                     ZStack {
                         AsyncImage(url: viewData.imageUrl)
@@ -36,8 +36,9 @@ struct CardCellView: View {
                         AsyncImage(url: viewData.imageUrl)
                             .scaledToFill()
                     }
+                    .frame(width: 56, height: 106)
                 }
-                .padding(EdgeInsets(top: 21, leading: 24, bottom: 0, trailing: 0))
+                                
                 .frame(width: 361, height: 106)
                 
                 Divider()
@@ -46,10 +47,10 @@ struct CardCellView: View {
                     Text(viewData.description)
                         .font(Font.custom("Sora", size: 14))
                         .lineSpacing(18)
-                        .foregroundColor(.textGray)
+                        .foregroundColor(Color.Text.neutralGray)
                     Spacer()
                     RectangleBadgeView(viewData: viewData.badge)
-                        .foregroundColor(viewData.isDisabled ? .Background.yellow : .Background.green)
+                        .foregroundColor(viewData.isDisabled ? .Text.yellow : .Text.green)
                         .background(viewData.isDisabled ? Color.Background.yellow : Color.Background.green)
                         .cornerRadius(.rectangleBadgeCR)
                     
@@ -70,13 +71,14 @@ struct CardCellView_Preview: PreviewProvider {
         VStack(spacing: 20) {
             CardCellView(
                 viewData: CardCellViewData(
-                    imageUrl: URL(string: "https://picsum.photos/200"),
+                    imageUrl: nil,
                     header: "How will my career develop",
                     description: "2 cards reeding",
                     badge: BadgeViewData(text: "Free"),
                     isDisabled: true
                 )
             )
+            .padding()
         }
     }
 }

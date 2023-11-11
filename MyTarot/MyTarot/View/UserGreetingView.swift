@@ -24,7 +24,7 @@ struct UserGreetingView: View {
             Text(viewData.text)
                     .font(Font.custom("SF Pro Display", size: 18))
                     .tracking(0.54)
-                    .foregroundColor(.primaryWhite)
+                    .foregroundColor(Color.Text.white)
             Spacer()
             }
             .padding(Constants.padding)

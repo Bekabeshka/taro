@@ -20,10 +20,11 @@ struct DailyCardView: View {
         Button(action: { print("1") }) {
             HStack(spacing: 20) {
                 BadgeView(viewData: BadgeViewData(text: viewData.badgeText))
-                    .foregroundColor(.primaryWhite)
+                    .padding(Constants.badggePadding)
+                    .foregroundColor(Color.Text.white)
                     .background(
                         LinearGradient(
-                            colors: [.gradientOrange, .gradientRed, .gradientPink],
+                            colors: [Color.Background.gradientOrange, Color.Background.gradientRed, Color.Background.gradientPink],
                             startPoint: .bottomLeading,
                             endPoint: .topTrailing
                         )
@@ -32,12 +33,11 @@ struct DailyCardView: View {
                 TextView(header: viewData.header, subHead: viewData.subHead)
                 Spacer()
                 Image("Vector")
-                    .foregroundColor(.primaryWhite)
+                    .foregroundColor(Color.Background.white)
             }
         }
         .padding(Constants.padding)
         .frame(maxWidth: .infinity)
-//        .background(Color.primaryBlack)
         .background(.ultraThinMaterial)
         .cornerRadius(8)
     }
@@ -63,6 +63,7 @@ private struct TextView: View {
 
 private enum Constants {
     static let padding = EdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20)
+    static let badggePadding = EdgeInsets(top: 5, leading: 8, bottom: 5, trailing: 8)
 }
 
 struct ContentVi_Previews: PreviewProvider {
@@ -70,7 +71,7 @@ struct ContentVi_Previews: PreviewProvider {
         ZStack{
             Color.black.ignoresSafeArea()
             Rectangle()
-                .background(Color.primaryWhite)
+                .background(Color.Background.white)
                 .frame(width: 24, height: 24)
             DailyCardView(viewData: DailyCardViewData(header: "Card of the day", subHead: "You have new card!", badgeText: "New"))
         }

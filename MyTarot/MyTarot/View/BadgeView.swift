@@ -19,24 +19,23 @@ struct BadgeView: View {
         Text(viewData.text)
             .font(Font.custom("Sora", size: 10).weight(.semibold))
             .lineSpacing(11)
-            .padding(EdgeInsets(top: 5, leading: 8, bottom: 5, trailing: 8))
-
     }
 }
 
 struct BadgeView_Previews: PreviewProvider {
     static var previews: some View {
         
-        RectangleBadgeView(viewData: BadgeViewData(text: "$5"))
-            .foregroundColor(.primaryGreen)
-            .background(Color.secondaryGreen)
-            .cornerRadius(.rectangleBadgeCR)
+//        RectangleBadgeView(viewData: BadgeViewData(text: "$5"))
+//            .foregroundColor(.green)
+//            .background(Color.Background.green)
+//            .cornerRadius(.rectangleBadgeCR)
         
         BadgeView(viewData: BadgeViewData(text: "New"))
-            .foregroundColor(.primaryWhite)
+            .padding(EdgeInsets(top: 5, leading: 8, bottom: 5, trailing: 8))
+            .foregroundColor(Color.Text.white)
             .background(
                 LinearGradient(
-                    colors: [.gradientOrange, .gradientRed, .gradientPink],
+                    colors: [Color.Background.gradientOrange, Color.Background.gradientRed, Color.Background.gradientPink],
                     startPoint: .bottomLeading,
                     endPoint: .topTrailing
                 )

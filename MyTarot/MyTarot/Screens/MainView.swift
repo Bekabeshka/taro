@@ -30,7 +30,7 @@ struct MainView: View {
                 .foregroundColor(.clear)
             
 
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 VStack(spacing: 12) {
                     VStack(spacing: 24) {
                         UserGreetingView(viewData: userGreetingViewData)
@@ -39,6 +39,14 @@ struct MainView: View {
                                 .offset(x: 130, y: -39)
                             DailyCardView(viewData: dailyCardViewData)
                         }
+                        SegmentedPickerExample(titles: [
+                            SegmentItem(title: "All", badge: "23"),
+                            SegmentItem(title: "Love", badge: "13"),
+                            SegmentItem(title: "Free", badge: "3"),
+                            SegmentItem(title: "Love", badge: "13"),
+                            SegmentItem(title: "Free", badge: "3"),
+                            SegmentItem(title: "All", badge: "7")
+                        ])
                         LazyVGrid(columns: [GridItem()]) {
                             ForEach(1...20, id: \.self) {_ in
                                 CardCellView(viewData: cardCellViewData)
@@ -46,15 +54,14 @@ struct MainView: View {
                         }
                     }
                 }
-                .padding()//setup padding
+                .padding(Constants.insets)
             }
         }
-
-//        .safeAreaInset(edge: .bottom) {
-//            Text("aaaaaaa")
-//                .foregroundColor(.red)
-//        }
     }
+}
+
+private enum Constants {
+    static let insets = EdgeInsets(top: 0, leading: 16, bottom: 24, trailing: 16)
 }
 
 struct MainView_Previews: PreviewProvider {
@@ -62,3 +69,4 @@ struct MainView_Previews: PreviewProvider {
         MainView()
     }
 }
+

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4509CA472AFFE00B00CECBD5 /* SegmentedPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4509CA462AFFE00B00CECBD5 /* SegmentedPickerView.swift */; };
 		450D62622AFA685B00AD359E /* RectangleBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450D62612AFA685B00AD359E /* RectangleBadgeView.swift */; };
 		450D62642AFA6A4600AD359E /* DailyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450D62632AFA6A4600AD359E /* DailyCardView.swift */; };
 		450D626F2AFA7C4800AD359E /* CardCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450D626E2AFA7C4800AD359E /* CardCellView.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4509CA462AFFE00B00CECBD5 /* SegmentedPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedPickerView.swift; sourceTree = "<group>"; };
 		450D62612AFA685B00AD359E /* RectangleBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleBadgeView.swift; sourceTree = "<group>"; };
 		450D62632AFA6A4600AD359E /* DailyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCardView.swift; sourceTree = "<group>"; };
 		450D626E2AFA7C4800AD359E /* CardCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCellView.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				450D62632AFA6A4600AD359E /* DailyCardView.swift */,
 				450D626E2AFA7C4800AD359E /* CardCellView.swift */,
 				450D62702AFA8F8E00AD359E /* UserGreetingView.swift */,
+				4509CA462AFFE00B00CECBD5 /* SegmentedPickerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				45D240972AF6C35500C5C65F /* MyTarotApp.swift in Sources */,
 				455F7D172AF93ECB00E1F62B /* CGFloat+CornerRadius.swift in Sources */,
 				455F7D1D2AF93FC500E1F62B /* AuthorizationView.swift in Sources */,
+				4509CA472AFFE00B00CECBD5 /* SegmentedPickerView.swift in Sources */,
 				450D62642AFA6A4600AD359E /* DailyCardView.swift in Sources */,
 				455F7D132AF937C400E1F62B /* Color+Hex.swift in Sources */,
 			);
