@@ -14,6 +14,8 @@ final class AppCoordinator: Coordinator {
     private let coordinatorsFactory: CoordinatorsFactory
     private var preparedViewControllers: [UIViewController] = []
     
+    private var isAuthorized = false
+    
     init(coordinatorsFactory: CoordinatorsFactory) {
         self.tabBarController = AppTabBarController()
         self.coordinatorsFactory = coordinatorsFactory
@@ -23,6 +25,12 @@ final class AppCoordinator: Coordinator {
         _ = configureHomeCoordinator()
         _ = configureHistoryCoordinator()
         _ = configureProfileCoordinator()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [unowned self] in
+            if !self.isAuthorized {
+                self.startAuthCoordinator()
+            }
+        }
 
         tabBarController.viewControllers = preparedViewControllers
     }
@@ -56,6 +64,15 @@ final class AppCoordinator: Coordinator {
         
         return coordinator
     }
+    
+    private func startAuthCoordinator() {
+        let coordinator = coordinatorsFactory.makeAuthCoordinator()
+        coordinator.start()
+        
+        add(coordinator)
+        
+        tabBarController.present(coordinator.router.toPresent, animated: true)
+    }
 }
 
 final class CoordinatorsFactory {
@@ -75,5 +92,11 @@ final class CoordinatorsFactory {
         let navigationController = UINavigationController()
         navigationController.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "profile-tab"), tag: 2)
         return ProfileCoordinator(router: NavigationRouter(navigationController: navigationController))
+    }
+    
+    func makeAuthCoordinator() -> AuthCoordinator {
+        let navigationController = UINavigationController()
+        navigationController.modalPresentationStyle = .fullScreen
+        return AuthCoordinator(router: NavigationRouter(navigationController: navigationController), pagesFactory: AuthPagesFactory())
     }
 }

@@ -1,5 +1,5 @@
 //
-//  OtpCodeVerificationView.swift
+//  OtpCodeVerificationPage.swift
 //  MyTarot
 //
 //  Created by bekabeshka on 07.11.2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct OtpCodeVerificationView: View {
+struct OtpCodeVerificationPage: View {
     @ObservedObject private var viewModel: OtpCodeVerificationViewModel
     
     init(viewModel: OtpCodeVerificationViewModel) {
@@ -45,9 +45,8 @@ struct OtpCodeVerificationView: View {
     }
 }
 
-struct OtpView_Previews: PreviewProvider {
+struct OtpCodeVerificationPage_Previews: PreviewProvider {
     static var previews: some View {
-        OtpCodeVerificationView(viewModel: OtpCodeVerificationViewModel())
+        OtpCodeVerificationPage(viewModel: OtpCodeVerificationViewModel())
     }
 }
-

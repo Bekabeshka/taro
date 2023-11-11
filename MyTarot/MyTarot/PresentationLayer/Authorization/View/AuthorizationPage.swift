@@ -1,5 +1,5 @@
 //
-//  AuthorizationView.swift
+//  AuthorizationPage.swift
 //  MyTarot
 //
 //  Created by bekabeshka on 06.11.2023.
@@ -8,7 +8,9 @@
 import SwiftUI
 import AuthenticationServices
 
-struct AuthorizationView: View {
+struct AuthorizationPage: View {
+    var authorize: VoidCallback?
+    
     var body: some View {
         ZStack() {
             Color.Background.black.ignoresSafeArea()
@@ -25,10 +27,13 @@ struct AuthorizationView: View {
                 .foregroundColor(.Background.black)
                 .cornerRadius(.cornerRadius)
                     
-                PrimaryButton(viewData: PrimaryButtonViewData(text: "Sign In with Apple"))
-                    .background(Color.Background.gray)
-                    .foregroundColor(.Background.white)
-                    .cornerRadius(.cornerRadius)
+                PrimaryButton(viewData: PrimaryButtonViewData(
+                    text: "Sign In with Apple",
+                    action: authorize
+                ))
+                .background(Color.Background.gray)
+                .foregroundColor(.Background.white)
+                .cornerRadius(.cornerRadius)
             }
             .padding(.screenInsets)
         }
@@ -44,8 +49,8 @@ struct AuthorizationView: View {
     }
 }
 
-struct AuthorizationView_Previews: PreviewProvider {
+struct AuthorizationPage_Previews: PreviewProvider {
     static var previews: some View {
-        AuthorizationView()
+        AuthorizationPage()
     }
 }

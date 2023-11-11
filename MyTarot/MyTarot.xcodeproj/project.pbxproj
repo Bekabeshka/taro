@@ -11,8 +11,8 @@
 		455F7D152AF9398600E1F62B /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F7D142AF9398600E1F62B /* Color+Theme.swift */; };
 		455F7D172AF93ECB00E1F62B /* CGFloat+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F7D162AF93ECB00E1F62B /* CGFloat+CornerRadius.swift */; };
 		455F7D1A2AF93F1500E1F62B /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F7D192AF93F1500E1F62B /* PrimaryButton.swift */; };
-		455F7D1D2AF93FC500E1F62B /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F7D1C2AF93FC500E1F62B /* AuthorizationView.swift */; };
-		455F7D3B2AFA795000E1F62B /* NativeAuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F7D3A2AFA795000E1F62B /* NativeAuthorizationView.swift */; };
+		455F7D1D2AF93FC500E1F62B /* AuthorizationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F7D1C2AF93FC500E1F62B /* AuthorizationPage.swift */; };
+		455F7D3B2AFA795000E1F62B /* NativeAuthorizationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F7D3A2AFA795000E1F62B /* NativeAuthorizationPage.swift */; };
 		4566884E2AFE6D45009B9CB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566884D2AFE6D45009B9CB7 /* AppDelegate.swift */; };
 		456688502AFE6D4D009B9CB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566884F2AFE6D4D009B9CB7 /* SceneDelegate.swift */; };
 		456688522AFE7768009B9CB7 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456688512AFE7768009B9CB7 /* UIColor+Hex.swift */; };
@@ -27,12 +27,15 @@
 		4566886A2AFFAF22009B9CB7 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456688692AFFAF22009B9CB7 /* Router.swift */; };
 		4566886C2AFFAF77009B9CB7 /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566886B2AFFAF77009B9CB7 /* NavigationRouter.swift */; };
 		4566886E2AFFB46D009B9CB7 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566886D2AFFB46D009B9CB7 /* Presentable.swift */; };
+		456688722AFFB7E8009B9CB7 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456688712AFFB7E8009B9CB7 /* AuthCoordinator.swift */; };
+		456688742AFFC439009B9CB7 /* PhoneNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456688732AFFC439009B9CB7 /* PhoneNumberView.swift */; };
+		456688782AFFC462009B9CB7 /* PhoneNubmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456688772AFFC462009B9CB7 /* PhoneNubmer.swift */; };
 		45B96E5D2AFA90A000F06917 /* EdgeInsets+ScreenPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B96E5C2AFA90A000F06917 /* EdgeInsets+ScreenPadding.swift */; };
-		45B96E5F2AFA90FE00F06917 /* OtpCodeVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B96E5E2AFA90FE00F06917 /* OtpCodeVerificationView.swift */; };
+		45B96E5F2AFA90FE00F06917 /* OtpCodeVerificationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B96E5E2AFA90FE00F06917 /* OtpCodeVerificationPage.swift */; };
 		45B96E622AFAB18F00F06917 /* OtpCodeVerificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B96E612AFAB18F00F06917 /* OtpCodeVerificationViewModel.swift */; };
 		45B96E642AFAB1AD00F06917 /* OtpCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B96E632AFAB1AC00F06917 /* OtpCodeView.swift */; };
 		45B96E662AFAB1C000F06917 /* OtpCodeBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B96E652AFAB1C000F06917 /* OtpCodeBox.swift */; };
-		45B96E6C2AFBC34E00F06917 /* PhoneNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B96E6B2AFBC34E00F06917 /* PhoneNumberView.swift */; };
+		45B96E6C2AFBC34E00F06917 /* PhoneNumberPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B96E6B2AFBC34E00F06917 /* PhoneNumberPage.swift */; };
 		45B96E772AFBD55B00F06917 /* Sora-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45B96E712AFBD41700F06917 /* Sora-ExtraLight.ttf */; };
 		45B96E782AFBD55B00F06917 /* Sora-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45B96E702AFBD41700F06917 /* Sora-Bold.ttf */; };
 		45B96E792AFBD55B00F06917 /* Sora-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45B96E742AFBD41700F06917 /* Sora-SemiBold.ttf */; };
@@ -51,9 +54,9 @@
 		455F7D142AF9398600E1F62B /* Color+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Theme.swift"; sourceTree = "<group>"; };
 		455F7D162AF93ECB00E1F62B /* CGFloat+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+CornerRadius.swift"; sourceTree = "<group>"; };
 		455F7D192AF93F1500E1F62B /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
-		455F7D1C2AF93FC500E1F62B /* AuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
+		455F7D1C2AF93FC500E1F62B /* AuthorizationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationPage.swift; sourceTree = "<group>"; };
 		455F7D1F2AF9438D00E1F62B /* MyTarot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyTarot.entitlements; sourceTree = "<group>"; };
-		455F7D3A2AFA795000E1F62B /* NativeAuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAuthorizationView.swift; sourceTree = "<group>"; };
+		455F7D3A2AFA795000E1F62B /* NativeAuthorizationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAuthorizationPage.swift; sourceTree = "<group>"; };
 		4566884D2AFE6D45009B9CB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4566884F2AFE6D4D009B9CB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		456688512AFE7768009B9CB7 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
@@ -68,12 +71,15 @@
 		456688692AFFAF22009B9CB7 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		4566886B2AFFAF77009B9CB7 /* NavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
 		4566886D2AFFB46D009B9CB7 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		456688712AFFB7E8009B9CB7 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		456688732AFFC439009B9CB7 /* PhoneNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberView.swift; sourceTree = "<group>"; };
+		456688772AFFC462009B9CB7 /* PhoneNubmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNubmer.swift; sourceTree = "<group>"; };
 		45B96E5C2AFA90A000F06917 /* EdgeInsets+ScreenPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EdgeInsets+ScreenPadding.swift"; sourceTree = "<group>"; };
-		45B96E5E2AFA90FE00F06917 /* OtpCodeVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpCodeVerificationView.swift; sourceTree = "<group>"; };
+		45B96E5E2AFA90FE00F06917 /* OtpCodeVerificationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpCodeVerificationPage.swift; sourceTree = "<group>"; };
 		45B96E612AFAB18F00F06917 /* OtpCodeVerificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpCodeVerificationViewModel.swift; sourceTree = "<group>"; };
 		45B96E632AFAB1AC00F06917 /* OtpCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpCodeView.swift; sourceTree = "<group>"; };
 		45B96E652AFAB1C000F06917 /* OtpCodeBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpCodeBox.swift; sourceTree = "<group>"; };
-		45B96E6B2AFBC34E00F06917 /* PhoneNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberView.swift; sourceTree = "<group>"; };
+		45B96E6B2AFBC34E00F06917 /* PhoneNumberPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberPage.swift; sourceTree = "<group>"; };
 		45B96E6E2AFBD41700F06917 /* Sora-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-Regular.ttf"; sourceTree = "<group>"; };
 		45B96E6F2AFBD41700F06917 /* Sora-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-ExtraBold.ttf"; sourceTree = "<group>"; };
 		45B96E702AFBD41700F06917 /* Sora-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-Bold.ttf"; sourceTree = "<group>"; };
@@ -195,13 +201,40 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		456688702AFFB7DC009B9CB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				455F7D1C2AF93FC500E1F62B /* AuthorizationPage.swift */,
+				455F7D3A2AFA795000E1F62B /* NativeAuthorizationPage.swift */,
+				45B96E672AFAB1D000F06917 /* Otp */,
+				456688752AFFC44A009B9CB7 /* PhoneNumber */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		456688752AFFC44A009B9CB7 /* PhoneNumber */ = {
+			isa = PBXGroup;
+			children = (
+				45B96E6B2AFBC34E00F06917 /* PhoneNumberPage.swift */,
+				456688732AFFC439009B9CB7 /* PhoneNumberView.swift */,
+			);
+			path = PhoneNumber;
+			sourceTree = "<group>";
+		};
+		456688762AFFC45B009B9CB7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				456688772AFFC462009B9CB7 /* PhoneNubmer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		45B96E602AFAB17B00F06917 /* Authorization */ = {
 			isa = PBXGroup;
 			children = (
-				455F7D1C2AF93FC500E1F62B /* AuthorizationView.swift */,
-				455F7D3A2AFA795000E1F62B /* NativeAuthorizationView.swift */,
-				45B96E672AFAB1D000F06917 /* Otp */,
-				45B96E6B2AFBC34E00F06917 /* PhoneNumberView.swift */,
+				456688712AFFB7E8009B9CB7 /* AuthCoordinator.swift */,
+				456688762AFFC45B009B9CB7 /* Models */,
+				456688702AFFB7DC009B9CB7 /* View */,
 			);
 			path = Authorization;
 			sourceTree = "<group>";
@@ -209,7 +242,7 @@
 		45B96E672AFAB1D000F06917 /* Otp */ = {
 			isa = PBXGroup;
 			children = (
-				45B96E5E2AFA90FE00F06917 /* OtpCodeVerificationView.swift */,
+				45B96E5E2AFA90FE00F06917 /* OtpCodeVerificationPage.swift */,
 				45B96E612AFAB18F00F06917 /* OtpCodeVerificationViewModel.swift */,
 				45B96E632AFAB1AC00F06917 /* OtpCodeView.swift */,
 				45B96E652AFAB1C000F06917 /* OtpCodeBox.swift */,
@@ -352,7 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45B96E5F2AFA90FE00F06917 /* OtpCodeVerificationView.swift in Sources */,
+				45B96E5F2AFA90FE00F06917 /* OtpCodeVerificationPage.swift in Sources */,
 				456688682AFFACF7009B9CB7 /* View+ViewController.swift in Sources */,
 				4566886A2AFFAF22009B9CB7 /* Router.swift in Sources */,
 				45B96E5D2AFA90A000F06917 /* EdgeInsets+ScreenPadding.swift in Sources */,
@@ -364,15 +397,18 @@
 				45D240992AF6C35500C5C65F /* ContentView.swift in Sources */,
 				455F7D152AF9398600E1F62B /* Color+Theme.swift in Sources */,
 				4566886C2AFFAF77009B9CB7 /* NavigationRouter.swift in Sources */,
-				455F7D3B2AFA795000E1F62B /* NativeAuthorizationView.swift in Sources */,
+				455F7D3B2AFA795000E1F62B /* NativeAuthorizationPage.swift in Sources */,
 				456688502AFE6D4D009B9CB7 /* SceneDelegate.swift in Sources */,
 				45B96E662AFAB1C000F06917 /* OtpCodeBox.swift in Sources */,
 				456688522AFE7768009B9CB7 /* UIColor+Hex.swift in Sources */,
 				456688552AFF83D0009B9CB7 /* Coordinator.swift in Sources */,
+				456688782AFFC462009B9CB7 /* PhoneNubmer.swift in Sources */,
 				456688662AFFACBC009B9CB7 /* ProfileCoordinator.swift in Sources */,
+				456688722AFFB7E8009B9CB7 /* AuthCoordinator.swift in Sources */,
 				455F7D172AF93ECB00E1F62B /* CGFloat+CornerRadius.swift in Sources */,
-				455F7D1D2AF93FC500E1F62B /* AuthorizationView.swift in Sources */,
-				45B96E6C2AFBC34E00F06917 /* PhoneNumberView.swift in Sources */,
+				455F7D1D2AF93FC500E1F62B /* AuthorizationPage.swift in Sources */,
+				456688742AFFC439009B9CB7 /* PhoneNumberView.swift in Sources */,
+				45B96E6C2AFBC34E00F06917 /* PhoneNumberPage.swift in Sources */,
 				45B96E642AFAB1AD00F06917 /* OtpCodeView.swift in Sources */,
 				456688592AFF841A009B9CB7 /* AppCoordinator.swift in Sources */,
 				456688572AFF83F0009B9CB7 /* AppTabBarController.swift in Sources */,
