@@ -30,6 +30,7 @@
 		456688722AFFB7E8009B9CB7 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456688712AFFB7E8009B9CB7 /* AuthCoordinator.swift */; };
 		456688742AFFC439009B9CB7 /* PhoneNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456688732AFFC439009B9CB7 /* PhoneNumberView.swift */; };
 		456688782AFFC462009B9CB7 /* PhoneNubmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456688772AFFC462009B9CB7 /* PhoneNubmer.swift */; };
+		4566887B2B00C608009B9CB7 /* TaroPredictionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566887A2B00C608009B9CB7 /* TaroPredictionPage.swift */; };
 		45B96E5D2AFA90A000F06917 /* EdgeInsets+ScreenPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B96E5C2AFA90A000F06917 /* EdgeInsets+ScreenPadding.swift */; };
 		45B96E5F2AFA90FE00F06917 /* OtpCodeVerificationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B96E5E2AFA90FE00F06917 /* OtpCodeVerificationPage.swift */; };
 		45B96E622AFAB18F00F06917 /* OtpCodeVerificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B96E612AFAB18F00F06917 /* OtpCodeVerificationViewModel.swift */; };
@@ -74,6 +75,7 @@
 		456688712AFFB7E8009B9CB7 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 		456688732AFFC439009B9CB7 /* PhoneNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberView.swift; sourceTree = "<group>"; };
 		456688772AFFC462009B9CB7 /* PhoneNubmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNubmer.swift; sourceTree = "<group>"; };
+		4566887A2B00C608009B9CB7 /* TaroPredictionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaroPredictionPage.swift; sourceTree = "<group>"; };
 		45B96E5C2AFA90A000F06917 /* EdgeInsets+ScreenPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EdgeInsets+ScreenPadding.swift"; sourceTree = "<group>"; };
 		45B96E5E2AFA90FE00F06917 /* OtpCodeVerificationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpCodeVerificationPage.swift; sourceTree = "<group>"; };
 		45B96E612AFAB18F00F06917 /* OtpCodeVerificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpCodeVerificationViewModel.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 		4566885D2AFFAC75009B9CB7 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				456688792B00C5BF009B9CB7 /* TaroPrediction */,
 				45B96E602AFAB17B00F06917 /* Authorization */,
 				456688642AFFACB5009B9CB7 /* Profile */,
 				456688612AFFAC9F009B9CB7 /* History */,
@@ -227,6 +230,14 @@
 				456688772AFFC462009B9CB7 /* PhoneNubmer.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		456688792B00C5BF009B9CB7 /* TaroPrediction */ = {
+			isa = PBXGroup;
+			children = (
+				4566887A2B00C608009B9CB7 /* TaroPredictionPage.swift */,
+			);
+			path = TaroPrediction;
 			sourceTree = "<group>";
 		};
 		45B96E602AFAB17B00F06917 /* Authorization */ = {
@@ -414,6 +425,7 @@
 				456688572AFF83F0009B9CB7 /* AppTabBarController.swift in Sources */,
 				455F7D132AF937C400E1F62B /* Color+Hex.swift in Sources */,
 				45B96E622AFAB18F00F06917 /* OtpCodeVerificationViewModel.swift in Sources */,
+				4566887B2B00C608009B9CB7 /* TaroPredictionPage.swift in Sources */,
 				456688632AFFACA6009B9CB7 /* HistoryCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

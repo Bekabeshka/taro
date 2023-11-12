@@ -14,8 +14,6 @@ final class AppCoordinator: Coordinator {
     private let coordinatorsFactory: CoordinatorsFactory
     private var preparedViewControllers: [UIViewController] = []
     
-    private var isAuthorized = false
-    
     init(coordinatorsFactory: CoordinatorsFactory) {
         self.tabBarController = AppTabBarController()
         self.coordinatorsFactory = coordinatorsFactory
@@ -26,12 +24,6 @@ final class AppCoordinator: Coordinator {
         _ = configureHistoryCoordinator()
         _ = configureProfileCoordinator()
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [unowned self] in
-            if !self.isAuthorized {
-                self.startAuthCoordinator()
-            }
-        }
-
         tabBarController.viewControllers = preparedViewControllers
     }
     
