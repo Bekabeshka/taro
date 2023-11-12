@@ -38,6 +38,7 @@ struct DailyCardView: View {
         }
         .padding(Constants.padding)
         .frame(maxWidth: .infinity)
+        .background((Color.Background.gray).opacity(0.02))
         .background(.ultraThinMaterial)
         .cornerRadius(8)
     }

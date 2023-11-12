@@ -59,7 +59,7 @@ struct CardCellView: View {
             }
         }
         .frame(maxWidth: .infinity)
-        .background(.regularMaterial)
+        .background(.ultraThinMaterial)
         .cornerRadius(8)
     }
 }

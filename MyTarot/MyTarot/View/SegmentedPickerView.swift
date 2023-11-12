@@ -75,9 +75,11 @@ struct SegmentedPickerExample: View {
                 HStack(spacing: 8) {
                     Text(item.title)
                         .foregroundColor(isSelected ? Color.Text.white : Color.Text.gray)
-                        .padding(.vertical, 8)
+//                        .padding(.vertical, 8)
                     BadgeView(viewData: BadgeViewData(text: item.badge))
                         .font(Font.custom("SF Pro Display", size: 10).weight(.medium))
+                        .foregroundColor(isSelected ? Color.Text.white : Color.Text.gray)
+                        .frame(minWidth: 14)
                         .padding(Constant.insets)
                         .background(Color.badgeGray)
                         .cornerRadius(.badgeCR)

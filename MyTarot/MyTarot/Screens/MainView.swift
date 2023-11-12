@@ -25,7 +25,7 @@ struct MainView: View {
                 .overlay {
                     Image("backgroundPattern")
                         .scaleEffect(x: 2, y: 2, anchor: .center)
-                        .opacity(0.1)
+                        .opacity(0.05)
                 }
                 .foregroundColor(.clear)
             
