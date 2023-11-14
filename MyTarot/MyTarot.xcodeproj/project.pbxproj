@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4509CA472AFFE00B00CECBD5 /* SegmentedPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4509CA462AFFE00B00CECBD5 /* SegmentedPickerView.swift */; };
+		4509CA4E2B03BE1800CECBD5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4509CA4D2B03BE1800CECBD5 /* MainView.swift */; };
 		450D62622AFA685B00AD359E /* RectangleBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450D62612AFA685B00AD359E /* RectangleBadgeView.swift */; };
 		450D62642AFA6A4600AD359E /* DailyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450D62632AFA6A4600AD359E /* DailyCardView.swift */; };
 		450D626F2AFA7C4800AD359E /* CardCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450D626E2AFA7C4800AD359E /* CardCellView.swift */; };
@@ -60,6 +61,7 @@
 
 /* Begin PBXFileReference section */
 		4509CA462AFFE00B00CECBD5 /* SegmentedPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedPickerView.swift; sourceTree = "<group>"; };
+		4509CA4D2B03BE1800CECBD5 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		450D62612AFA685B00AD359E /* RectangleBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleBadgeView.swift; sourceTree = "<group>"; };
 		450D62632AFA6A4600AD359E /* DailyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCardView.swift; sourceTree = "<group>"; };
 		450D626E2AFA7C4800AD359E /* CardCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCellView.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				45D240982AF6C35500C5C65F /* ContentView.swift */,
+				4509CA4D2B03BE1800CECBD5 /* MainView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -487,6 +490,7 @@
 				4566886E2AFFB46D009B9CB7 /* Presentable.swift in Sources */,
 				45D240992AF6C35500C5C65F /* ContentView.swift in Sources */,
 				455F7D152AF9398600E1F62B /* Color+Theme.swift in Sources */,
+				4509CA4E2B03BE1800CECBD5 /* MainView.swift in Sources */,
 				4566886C2AFFAF77009B9CB7 /* NavigationRouter.swift in Sources */,
 				455F7D3B2AFA795000E1F62B /* NativeAuthorizationPage.swift in Sources */,
 				456688502AFE6D4D009B9CB7 /* SceneDelegate.swift in Sources */,

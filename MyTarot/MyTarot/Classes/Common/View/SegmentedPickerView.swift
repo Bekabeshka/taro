@@ -37,6 +37,9 @@ public struct SegmentedPicker<Element, Content>: View where Content: View {
                         Button(action: { selectedIndex = index },
                                label: { content(data[index], selectedIndex == index) }
                         )
+                        .padding(.leading, index == 0 ? 16 : 0)
+                        .padding(.trailing, index == data.count - 1 ? 16 : 0)
+                        .padding(.trailing, index == data.count - 1 ? 0 : 6)
                         .buttonStyle(PlainButtonStyle())
                         .background(GeometryReader { proxy in
                             Color.clear.onAppear { frames[index] = proxy.frame(in: .global) }
@@ -74,6 +77,7 @@ struct SegmentedPickerExample: View {
             content: { item, isSelected in
                 HStack(spacing: 8) {
                     Text(item.title)
+                        .font(Font.custom("Sora", size: 18))
                         .foregroundColor(isSelected ? Color.Text.white : Color.Text.gray)
 //                        .padding(.vertical, 8)
                     BadgeView(viewData: BadgeViewData(text: item.badge))
@@ -93,7 +97,7 @@ struct SegmentedPickerExample: View {
 }
 
 private enum Constant {
-    static let padding = EdgeInsets(top: 20, leading: 8, bottom: 20, trailing: 20)
+    static let padding = EdgeInsets(top: 20, leading: 8, bottom: 20, trailing: 8)
     static let insets = EdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
 }
 
@@ -101,9 +105,9 @@ struct SegmentedPicker_Previews: PreviewProvider {
     static var previews: some View {
         SegmentedPickerExample(titles: [
             SegmentItem(title: "All", badge: "23"),
-            SegmentItem(title: "Love", badge: "13"),
-            SegmentItem(title: "Free", badge: "3"),
-            SegmentItem(title: "Love", badge: "13"),
+            SegmentItem(title: "Free", badge: "13"),
+            SegmentItem(title: "Paid", badge: "3"),
+            SegmentItem(title: "Active", badge: "13"),
             SegmentItem(title: "Free", badge: "3"),
             SegmentItem(title: "All", badge: "7")
         ])

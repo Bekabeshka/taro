@@ -26,20 +26,29 @@ struct CardCellView: View {
                         .font(Font.custom("Sora", size: 28).weight(.bold))
                         .foregroundColor(Color.Text.white)
                         .padding(EdgeInsets(top: 21, leading: 24, bottom: 0, trailing: 0))
-
-                    Spacer()
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .multilineTextAlignment(.leading)
                     ZStack {
-                        AsyncImage(url: viewData.imageUrl)
-                            .opacity(0.70)
-                            .blur(radius: 15)
-                        
-                        AsyncImage(url: viewData.imageUrl)
-                            .scaledToFill()
+                        if let imageUrl = viewData.imageUrl {
+                            AsyncImage(url: imageUrl)
+                                .opacity(0.70)
+                                .blur(radius: 15)
+                            
+                            AsyncImage(url: imageUrl)
+                                .scaledToFill()
+                        } else {
+                            Image("planet-default")
+                                .opacity(0.70)
+                                .blur(radius: 15)
+                            
+                            Image("planet-default")
+                                .scaledToFill()
+                        }
+
                     }
-                    .frame(width: 56, height: 106)
+                    .frame(maxHeight: 106)//fix frames
                 }
-                                
-                .frame(width: 361, height: 106)
+                .frame(minHeight: 106)//fix frames
                 
                 Divider()
                     .opacity(0.3)
