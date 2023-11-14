@@ -33,6 +33,7 @@
 		4566887B2B00C608009B9CB7 /* TaroPredictionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566887A2B00C608009B9CB7 /* TaroPredictionPage.swift */; };
 		4566887D2B0103D1009B9CB7 /* TaroCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566887C2B0103D1009B9CB7 /* TaroCardView.swift */; };
 		456688842B010E62009B9CB7 /* Font+Sora.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456688832B010E62009B9CB7 /* Font+Sora.swift */; };
+		4577461E2B03BC4A005A82BF /* TaroProductPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4577461D2B03BC4A005A82BF /* TaroProductPage.swift */; };
 		45B96E5D2AFA90A000F06917 /* EdgeInsets+ScreenPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B96E5C2AFA90A000F06917 /* EdgeInsets+ScreenPadding.swift */; };
 		45B96E5F2AFA90FE00F06917 /* OtpCodeVerificationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B96E5E2AFA90FE00F06917 /* OtpCodeVerificationPage.swift */; };
 		45B96E622AFAB18F00F06917 /* OtpCodeVerificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B96E612AFAB18F00F06917 /* OtpCodeVerificationViewModel.swift */; };
@@ -80,6 +81,7 @@
 		4566887A2B00C608009B9CB7 /* TaroPredictionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaroPredictionPage.swift; sourceTree = "<group>"; };
 		4566887C2B0103D1009B9CB7 /* TaroCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaroCardView.swift; sourceTree = "<group>"; };
 		456688832B010E62009B9CB7 /* Font+Sora.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Sora.swift"; sourceTree = "<group>"; };
+		4577461D2B03BC4A005A82BF /* TaroProductPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaroProductPage.swift; sourceTree = "<group>"; };
 		45B96E5C2AFA90A000F06917 /* EdgeInsets+ScreenPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EdgeInsets+ScreenPadding.swift"; sourceTree = "<group>"; };
 		45B96E5E2AFA90FE00F06917 /* OtpCodeVerificationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpCodeVerificationPage.swift; sourceTree = "<group>"; };
 		45B96E612AFAB18F00F06917 /* OtpCodeVerificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpCodeVerificationViewModel.swift; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 			children = (
 				4566887A2B00C608009B9CB7 /* TaroPredictionPage.swift */,
 				4566887C2B0103D1009B9CB7 /* TaroCardView.swift */,
+				4577461D2B03BC4A005A82BF /* TaroProductPage.swift */,
 			);
 			path = TaroPrediction;
 			sourceTree = "<group>";
@@ -446,6 +449,7 @@
 				456688682AFFACF7009B9CB7 /* View+ViewController.swift in Sources */,
 				4566886A2AFFAF22009B9CB7 /* Router.swift in Sources */,
 				45B96E5D2AFA90A000F06917 /* EdgeInsets+ScreenPadding.swift in Sources */,
+				4577461E2B03BC4A005A82BF /* TaroProductPage.swift in Sources */,
 				455F7D1A2AF93F1500E1F62B /* PrimaryButton.swift in Sources */,
 				4566885C2AFFAC1B009B9CB7 /* TabBarAnimatedTransition.swift in Sources */,
 				4566884E2AFE6D45009B9CB7 /* AppDelegate.swift in Sources */,

@@ -18,22 +18,24 @@ struct AuthorizationPage: View {
                 Spacer()
                 PrimaryButton(viewData: PrimaryButtonViewData(
                     text: "Sign In with Apple",
-                    iconName: "apple-logo",
-                    action: {
-                        appleAuthorize()
-                    }
+                    iconName: "apple-logo"
                 ))
                 .background(Color.Background.white)
                 .foregroundColor(.Background.black)
                 .cornerRadius(.cornerRadius)
+                .onTapGesture {
+                    appleAuthorize()
+                }
                     
                 PrimaryButton(viewData: PrimaryButtonViewData(
-                    text: "Sign In with Apple",
-                    action: authorize
+                    text: "Sign In with Apple"
                 ))
                 .background(Color.Background.gray)
                 .foregroundColor(.Background.white)
                 .cornerRadius(.cornerRadius)
+                .onTapGesture {
+                    authorize?()
+                }
             }
             .padding(.screenInsets)
         }

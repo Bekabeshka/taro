@@ -10,12 +10,10 @@ import SwiftUI
 struct PrimaryButtonViewData {
     let text: String
     let iconName: String?
-    let action: (() -> Void)?
     
-    init(text: String, iconName: String? = nil, action: (() -> Void)? = nil) {
+    init(text: String, iconName: String? = nil) {
         self.text = text
         self.iconName = iconName
-        self.action = action
     }
 }
 
@@ -23,16 +21,15 @@ struct PrimaryButton: View {
     let viewData: PrimaryButtonViewData
     
     var body: some View {
-        Button {
-            viewData.action?()
-        } label: {
-            HStack(spacing: 12) {
-                if let iconName = viewData.iconName {
-                    Image(iconName)
-                }
-                Text(viewData.text)
-                    .padding(Constants.buttonPadding)
+        HStack(spacing: 12) {
+            if
+                let iconName = viewData.iconName,
+                let image = UIImage(named: iconName)?.withRenderingMode(.alwaysTemplate)
+            {
+                Image(uiImage: image)
             }
+            Text(viewData.text)
+                .padding(Constants.buttonPadding)
         }
         .frame(maxWidth: .infinity)
     }
