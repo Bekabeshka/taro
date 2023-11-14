@@ -12,14 +12,47 @@
 		450D62642AFA6A4600AD359E /* DailyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450D62632AFA6A4600AD359E /* DailyCardView.swift */; };
 		450D626F2AFA7C4800AD359E /* CardCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450D626E2AFA7C4800AD359E /* CardCellView.swift */; };
 		450D62712AFA8F8E00AD359E /* UserGreetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450D62702AFA8F8E00AD359E /* UserGreetingView.swift */; };
-		450D62752AFA97D800AD359E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450D62742AFA97D800AD359E /* MainView.swift */; };
 		455942A22AFA039B0014AE46 /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455942A12AFA039B0014AE46 /* BadgeView.swift */; };
 		455F7D132AF937C400E1F62B /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F7D122AF937C400E1F62B /* Color+Hex.swift */; };
 		455F7D152AF9398600E1F62B /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F7D142AF9398600E1F62B /* Color+Theme.swift */; };
 		455F7D172AF93ECB00E1F62B /* CGFloat+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F7D162AF93ECB00E1F62B /* CGFloat+CornerRadius.swift */; };
 		455F7D1A2AF93F1500E1F62B /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F7D192AF93F1500E1F62B /* PrimaryButton.swift */; };
-		455F7D1D2AF93FC500E1F62B /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F7D1C2AF93FC500E1F62B /* AuthorizationView.swift */; };
-		45D240972AF6C35500C5C65F /* MyTarotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D240962AF6C35500C5C65F /* MyTarotApp.swift */; };
+		455F7D1D2AF93FC500E1F62B /* AuthorizationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F7D1C2AF93FC500E1F62B /* AuthorizationPage.swift */; };
+		455F7D3B2AFA795000E1F62B /* NativeAuthorizationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F7D3A2AFA795000E1F62B /* NativeAuthorizationPage.swift */; };
+		4566884E2AFE6D45009B9CB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566884D2AFE6D45009B9CB7 /* AppDelegate.swift */; };
+		456688502AFE6D4D009B9CB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566884F2AFE6D4D009B9CB7 /* SceneDelegate.swift */; };
+		456688522AFE7768009B9CB7 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456688512AFE7768009B9CB7 /* UIColor+Hex.swift */; };
+		456688552AFF83D0009B9CB7 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456688542AFF83D0009B9CB7 /* Coordinator.swift */; };
+		456688572AFF83F0009B9CB7 /* AppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456688562AFF83F0009B9CB7 /* AppTabBarController.swift */; };
+		456688592AFF841A009B9CB7 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456688582AFF841A009B9CB7 /* AppCoordinator.swift */; };
+		4566885C2AFFAC1B009B9CB7 /* TabBarAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566885B2AFFAC1B009B9CB7 /* TabBarAnimatedTransition.swift */; };
+		456688602AFFAC8F009B9CB7 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566885F2AFFAC8F009B9CB7 /* HomeCoordinator.swift */; };
+		456688632AFFACA6009B9CB7 /* HistoryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456688622AFFACA6009B9CB7 /* HistoryCoordinator.swift */; };
+		456688662AFFACBC009B9CB7 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456688652AFFACBC009B9CB7 /* ProfileCoordinator.swift */; };
+		456688682AFFACF7009B9CB7 /* View+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456688672AFFACF7009B9CB7 /* View+ViewController.swift */; };
+		4566886A2AFFAF22009B9CB7 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456688692AFFAF22009B9CB7 /* Router.swift */; };
+		4566886C2AFFAF77009B9CB7 /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566886B2AFFAF77009B9CB7 /* NavigationRouter.swift */; };
+		4566886E2AFFB46D009B9CB7 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566886D2AFFB46D009B9CB7 /* Presentable.swift */; };
+		456688722AFFB7E8009B9CB7 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456688712AFFB7E8009B9CB7 /* AuthCoordinator.swift */; };
+		456688742AFFC439009B9CB7 /* PhoneNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456688732AFFC439009B9CB7 /* PhoneNumberView.swift */; };
+		456688782AFFC462009B9CB7 /* PhoneNubmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456688772AFFC462009B9CB7 /* PhoneNubmer.swift */; };
+		4566887B2B00C608009B9CB7 /* TaroPredictionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566887A2B00C608009B9CB7 /* TaroPredictionPage.swift */; };
+		4566887D2B0103D1009B9CB7 /* TaroCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566887C2B0103D1009B9CB7 /* TaroCardView.swift */; };
+		456688842B010E62009B9CB7 /* Font+Sora.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456688832B010E62009B9CB7 /* Font+Sora.swift */; };
+		45B96E5D2AFA90A000F06917 /* EdgeInsets+ScreenPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B96E5C2AFA90A000F06917 /* EdgeInsets+ScreenPadding.swift */; };
+		45B96E5F2AFA90FE00F06917 /* OtpCodeVerificationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B96E5E2AFA90FE00F06917 /* OtpCodeVerificationPage.swift */; };
+		45B96E622AFAB18F00F06917 /* OtpCodeVerificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B96E612AFAB18F00F06917 /* OtpCodeVerificationViewModel.swift */; };
+		45B96E642AFAB1AD00F06917 /* OtpCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B96E632AFAB1AC00F06917 /* OtpCodeView.swift */; };
+		45B96E662AFAB1C000F06917 /* OtpCodeBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B96E652AFAB1C000F06917 /* OtpCodeBox.swift */; };
+		45B96E6C2AFBC34E00F06917 /* PhoneNumberPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B96E6B2AFBC34E00F06917 /* PhoneNumberPage.swift */; };
+		45B96E772AFBD55B00F06917 /* Sora-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45B96E712AFBD41700F06917 /* Sora-ExtraLight.ttf */; };
+		45B96E782AFBD55B00F06917 /* Sora-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45B96E702AFBD41700F06917 /* Sora-Bold.ttf */; };
+		45B96E792AFBD55B00F06917 /* Sora-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45B96E742AFBD41700F06917 /* Sora-SemiBold.ttf */; };
+		45B96E7A2AFBD55B00F06917 /* Sora-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45B96E752AFBD41700F06917 /* Sora-Thin.ttf */; };
+		45B96E7B2AFBD55B00F06917 /* Sora-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45B96E722AFBD41700F06917 /* Sora-Light.ttf */; };
+		45B96E7C2AFBD55B00F06917 /* Sora-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45B96E6F2AFBD41700F06917 /* Sora-ExtraBold.ttf */; };
+		45B96E7D2AFBD55B00F06917 /* Sora-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45B96E732AFBD41700F06917 /* Sora-Medium.ttf */; };
+		45B96E7E2AFBD55B00F06917 /* Sora-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45B96E6E2AFBD41700F06917 /* Sora-Regular.ttf */; };
 		45D240992AF6C35500C5C65F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D240982AF6C35500C5C65F /* ContentView.swift */; };
 		45D2409B2AF6C35600C5C65F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45D2409A2AF6C35600C5C65F /* Assets.xcassets */; };
 		45D2409E2AF6C35600C5C65F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45D2409D2AF6C35600C5C65F /* Preview Assets.xcassets */; };
@@ -37,10 +70,45 @@
 		455F7D142AF9398600E1F62B /* Color+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Theme.swift"; sourceTree = "<group>"; };
 		455F7D162AF93ECB00E1F62B /* CGFloat+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+CornerRadius.swift"; sourceTree = "<group>"; };
 		455F7D192AF93F1500E1F62B /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
-		455F7D1C2AF93FC500E1F62B /* AuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
+		455F7D1C2AF93FC500E1F62B /* AuthorizationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationPage.swift; sourceTree = "<group>"; };
 		455F7D1F2AF9438D00E1F62B /* MyTarot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyTarot.entitlements; sourceTree = "<group>"; };
+		455F7D3A2AFA795000E1F62B /* NativeAuthorizationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAuthorizationPage.swift; sourceTree = "<group>"; };
+		4566884D2AFE6D45009B9CB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4566884F2AFE6D4D009B9CB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		456688512AFE7768009B9CB7 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		456688542AFF83D0009B9CB7 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		456688562AFF83F0009B9CB7 /* AppTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarController.swift; sourceTree = "<group>"; };
+		456688582AFF841A009B9CB7 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		4566885B2AFFAC1B009B9CB7 /* TabBarAnimatedTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAnimatedTransition.swift; sourceTree = "<group>"; };
+		4566885F2AFFAC8F009B9CB7 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		456688622AFFACA6009B9CB7 /* HistoryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCoordinator.swift; sourceTree = "<group>"; };
+		456688652AFFACBC009B9CB7 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		456688672AFFACF7009B9CB7 /* View+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ViewController.swift"; sourceTree = "<group>"; };
+		456688692AFFAF22009B9CB7 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		4566886B2AFFAF77009B9CB7 /* NavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
+		4566886D2AFFB46D009B9CB7 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		456688712AFFB7E8009B9CB7 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		456688732AFFC439009B9CB7 /* PhoneNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberView.swift; sourceTree = "<group>"; };
+		456688772AFFC462009B9CB7 /* PhoneNubmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNubmer.swift; sourceTree = "<group>"; };
+		4566887A2B00C608009B9CB7 /* TaroPredictionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaroPredictionPage.swift; sourceTree = "<group>"; };
+		4566887C2B0103D1009B9CB7 /* TaroCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaroCardView.swift; sourceTree = "<group>"; };
+		456688832B010E62009B9CB7 /* Font+Sora.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Sora.swift"; sourceTree = "<group>"; };
+		45B96E5C2AFA90A000F06917 /* EdgeInsets+ScreenPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EdgeInsets+ScreenPadding.swift"; sourceTree = "<group>"; };
+		45B96E5E2AFA90FE00F06917 /* OtpCodeVerificationPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpCodeVerificationPage.swift; sourceTree = "<group>"; };
+		45B96E612AFAB18F00F06917 /* OtpCodeVerificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpCodeVerificationViewModel.swift; sourceTree = "<group>"; };
+		45B96E632AFAB1AC00F06917 /* OtpCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpCodeView.swift; sourceTree = "<group>"; };
+		45B96E652AFAB1C000F06917 /* OtpCodeBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpCodeBox.swift; sourceTree = "<group>"; };
+		45B96E6B2AFBC34E00F06917 /* PhoneNumberPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberPage.swift; sourceTree = "<group>"; };
+		45B96E6E2AFBD41700F06917 /* Sora-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-Regular.ttf"; sourceTree = "<group>"; };
+		45B96E6F2AFBD41700F06917 /* Sora-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-ExtraBold.ttf"; sourceTree = "<group>"; };
+		45B96E702AFBD41700F06917 /* Sora-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-Bold.ttf"; sourceTree = "<group>"; };
+		45B96E712AFBD41700F06917 /* Sora-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-ExtraLight.ttf"; sourceTree = "<group>"; };
+		45B96E722AFBD41700F06917 /* Sora-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-Light.ttf"; sourceTree = "<group>"; };
+		45B96E732AFBD41700F06917 /* Sora-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-Medium.ttf"; sourceTree = "<group>"; };
+		45B96E742AFBD41700F06917 /* Sora-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-SemiBold.ttf"; sourceTree = "<group>"; };
+		45B96E752AFBD41700F06917 /* Sora-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sora-Thin.ttf"; sourceTree = "<group>"; };
+		45B96E762AFBD47A00F06917 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45D240932AF6C35500C5C65F /* MyTarot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTarot.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		45D240962AF6C35500C5C65F /* MyTarotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTarotApp.swift; sourceTree = "<group>"; };
 		45D240982AF6C35500C5C65F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		45D2409A2AF6C35600C5C65F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45D2409D2AF6C35600C5C65F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -57,12 +125,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4509CA4A2B03B6C300CECBD5 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				450D62742AFA97D800AD359E /* MainView.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		455F7D182AF93EDA00E1F62B /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				456688822B010E35009B9CB7 /* Typography */,
 				455F7D162AF93ECB00E1F62B /* CGFloat+CornerRadius.swift */,
-				455F7D122AF937C400E1F62B /* Color+Hex.swift */,
-				455F7D142AF9398600E1F62B /* Color+Theme.swift */,
+				456688812B010E2B009B9CB7 /* Color */,
+				45B96E5C2AFA90A000F06917 /* EdgeInsets+ScreenPadding.swift */,
+				456688672AFFACF7009B9CB7 /* View+ViewController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -85,10 +163,198 @@
 			isa = PBXGroup;
 			children = (
 				45D240982AF6C35500C5C65F /* ContentView.swift */,
-				455F7D1C2AF93FC500E1F62B /* AuthorizationView.swift */,
-				450D62742AFA97D800AD359E /* MainView.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		4566884C2AFE6D35009B9CB7 /* ApplicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				4566884D2AFE6D45009B9CB7 /* AppDelegate.swift */,
+				4566884F2AFE6D4D009B9CB7 /* SceneDelegate.swift */,
+				456688582AFF841A009B9CB7 /* AppCoordinator.swift */,
+				4566885A2AFFAC0E009B9CB7 /* TabBarController */,
+			);
+			path = ApplicationLayer;
+			sourceTree = "<group>";
+		};
+		456688532AFF83C3009B9CB7 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				4566886D2AFFB46D009B9CB7 /* Presentable.swift */,
+				456688692AFFAF22009B9CB7 /* Router.swift */,
+				4566886B2AFFAF77009B9CB7 /* NavigationRouter.swift */,
+				456688542AFF83D0009B9CB7 /* Coordinator.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		4566885A2AFFAC0E009B9CB7 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				456688562AFF83F0009B9CB7 /* AppTabBarController.swift */,
+				4566885B2AFFAC1B009B9CB7 /* TabBarAnimatedTransition.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		4566885D2AFFAC75009B9CB7 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				456688792B00C5BF009B9CB7 /* TaroPrediction */,
+				45B96E602AFAB17B00F06917 /* Authorization */,
+				456688642AFFACB5009B9CB7 /* Profile */,
+				456688612AFFAC9F009B9CB7 /* History */,
+				4566885E2AFFAC82009B9CB7 /* Home */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		4566885E2AFFAC82009B9CB7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4566885F2AFFAC8F009B9CB7 /* HomeCoordinator.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		456688612AFFAC9F009B9CB7 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				456688622AFFACA6009B9CB7 /* HistoryCoordinator.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		456688642AFFACB5009B9CB7 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				456688652AFFACBC009B9CB7 /* ProfileCoordinator.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		456688702AFFB7DC009B9CB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				455F7D1C2AF93FC500E1F62B /* AuthorizationPage.swift */,
+				455F7D3A2AFA795000E1F62B /* NativeAuthorizationPage.swift */,
+				45B96E672AFAB1D000F06917 /* Otp */,
+				456688752AFFC44A009B9CB7 /* PhoneNumber */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		456688752AFFC44A009B9CB7 /* PhoneNumber */ = {
+			isa = PBXGroup;
+			children = (
+				45B96E6B2AFBC34E00F06917 /* PhoneNumberPage.swift */,
+				456688732AFFC439009B9CB7 /* PhoneNumberView.swift */,
+			);
+			path = PhoneNumber;
+			sourceTree = "<group>";
+		};
+		456688762AFFC45B009B9CB7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				456688772AFFC462009B9CB7 /* PhoneNubmer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		456688792B00C5BF009B9CB7 /* TaroPrediction */ = {
+			isa = PBXGroup;
+			children = (
+				4566887A2B00C608009B9CB7 /* TaroPredictionPage.swift */,
+				4566887C2B0103D1009B9CB7 /* TaroCardView.swift */,
+			);
+			path = TaroPrediction;
+			sourceTree = "<group>";
+		};
+		4566887E2B010DE2009B9CB7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				45B96E762AFBD47A00F06917 /* Info.plist */,
+				455F7D1F2AF9438D00E1F62B /* MyTarot.entitlements */,
+				45D2409A2AF6C35600C5C65F /* Assets.xcassets */,
+				45B96E6D2AFBD40C00F06917 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4566887F2B010DF0009B9CB7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4566884C2AFE6D35009B9CB7 /* ApplicationLayer */,
+				4566885D2AFFAC75009B9CB7 /* PresentationLayer */,
+				456688532AFF83C3009B9CB7 /* Navigation */,
+				455F7D1E2AF93FEF00E1F62B /* Screens */,
+				456688802B010E13009B9CB7 /* Common */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		456688802B010E13009B9CB7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				455F7D1B2AF93F3400E1F62B /* View */,
+				455F7D182AF93EDA00E1F62B /* Extension */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		456688812B010E2B009B9CB7 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				455F7D122AF937C400E1F62B /* Color+Hex.swift */,
+				456688512AFE7768009B9CB7 /* UIColor+Hex.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		456688822B010E35009B9CB7 /* Typography */ = {
+			isa = PBXGroup;
+			children = (
+				455F7D142AF9398600E1F62B /* Color+Theme.swift */,
+				456688832B010E62009B9CB7 /* Font+Sora.swift */,
+			);
+			path = Typography;
+			sourceTree = "<group>";
+		};
+		45B96E602AFAB17B00F06917 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				456688712AFFB7E8009B9CB7 /* AuthCoordinator.swift */,
+				456688762AFFC45B009B9CB7 /* Models */,
+				456688702AFFB7DC009B9CB7 /* View */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		45B96E672AFAB1D000F06917 /* Otp */ = {
+			isa = PBXGroup;
+			children = (
+				45B96E5E2AFA90FE00F06917 /* OtpCodeVerificationPage.swift */,
+				45B96E612AFAB18F00F06917 /* OtpCodeVerificationViewModel.swift */,
+				45B96E632AFAB1AC00F06917 /* OtpCodeView.swift */,
+				45B96E652AFAB1C000F06917 /* OtpCodeBox.swift */,
+			);
+			path = Otp;
+			sourceTree = "<group>";
+		};
+		45B96E6D2AFBD40C00F06917 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				45B96E702AFBD41700F06917 /* Sora-Bold.ttf */,
+				45B96E6F2AFBD41700F06917 /* Sora-ExtraBold.ttf */,
+				45B96E712AFBD41700F06917 /* Sora-ExtraLight.ttf */,
+				45B96E722AFBD41700F06917 /* Sora-Light.ttf */,
+				45B96E732AFBD41700F06917 /* Sora-Medium.ttf */,
+				45B96E6E2AFBD41700F06917 /* Sora-Regular.ttf */,
+				45B96E742AFBD41700F06917 /* Sora-SemiBold.ttf */,
+				45B96E752AFBD41700F06917 /* Sora-Thin.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		45D2408A2AF6C35500C5C65F = {
@@ -96,6 +362,7 @@
 			children = (
 				45D240952AF6C35500C5C65F /* MyTarot */,
 				45D240942AF6C35500C5C65F /* Products */,
+				4509CA4A2B03B6C300CECBD5 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,12 +377,8 @@
 		45D240952AF6C35500C5C65F /* MyTarot */ = {
 			isa = PBXGroup;
 			children = (
-				455F7D1F2AF9438D00E1F62B /* MyTarot.entitlements */,
-				45D240962AF6C35500C5C65F /* MyTarotApp.swift */,
-				455F7D1E2AF93FEF00E1F62B /* Screens */,
-				455F7D1B2AF93F3400E1F62B /* View */,
-				455F7D182AF93EDA00E1F62B /* Extension */,
-				45D2409A2AF6C35600C5C65F /* Assets.xcassets */,
+				4566887F2B010DF0009B9CB7 /* Classes */,
+				4566887E2B010DE2009B9CB7 /* Resources */,
 				45D2409C2AF6C35600C5C65F /* Preview Content */,
 			);
 			path = MyTarot;
@@ -187,8 +450,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45B96E7D2AFBD55B00F06917 /* Sora-Medium.ttf in Resources */,
+				45B96E782AFBD55B00F06917 /* Sora-Bold.ttf in Resources */,
 				45D2409E2AF6C35600C5C65F /* Preview Assets.xcassets in Resources */,
+				45B96E772AFBD55B00F06917 /* Sora-ExtraLight.ttf in Resources */,
+				45B96E7E2AFBD55B00F06917 /* Sora-Regular.ttf in Resources */,
 				45D2409B2AF6C35600C5C65F /* Assets.xcassets in Resources */,
+				45B96E7A2AFBD55B00F06917 /* Sora-Thin.ttf in Resources */,
+				45B96E7C2AFBD55B00F06917 /* Sora-ExtraBold.ttf in Resources */,
+				45B96E792AFBD55B00F06917 /* Sora-SemiBold.ttf in Resources */,
+				45B96E7B2AFBD55B00F06917 /* Sora-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,19 +471,45 @@
 			buildActionMask = 2147483647;
 			files = (
 				455942A22AFA039B0014AE46 /* BadgeView.swift in Sources */,
-				450D62752AFA97D800AD359E /* MainView.swift in Sources */,
 				455F7D1A2AF93F1500E1F62B /* PrimaryButton.swift in Sources */,
 				450D62622AFA685B00AD359E /* RectangleBadgeView.swift in Sources */,
 				450D626F2AFA7C4800AD359E /* CardCellView.swift in Sources */,
 				450D62712AFA8F8E00AD359E /* UserGreetingView.swift in Sources */,
+				45B96E5F2AFA90FE00F06917 /* OtpCodeVerificationPage.swift in Sources */,
+				456688682AFFACF7009B9CB7 /* View+ViewController.swift in Sources */,
+				4566886A2AFFAF22009B9CB7 /* Router.swift in Sources */,
+				45B96E5D2AFA90A000F06917 /* EdgeInsets+ScreenPadding.swift in Sources */,
+				455F7D1A2AF93F1500E1F62B /* PrimaryButton.swift in Sources */,
+				4566885C2AFFAC1B009B9CB7 /* TabBarAnimatedTransition.swift in Sources */,
+				4566884E2AFE6D45009B9CB7 /* AppDelegate.swift in Sources */,
+				456688842B010E62009B9CB7 /* Font+Sora.swift in Sources */,
+				456688602AFFAC8F009B9CB7 /* HomeCoordinator.swift in Sources */,
+				4566886E2AFFB46D009B9CB7 /* Presentable.swift in Sources */,
 				45D240992AF6C35500C5C65F /* ContentView.swift in Sources */,
 				455F7D152AF9398600E1F62B /* Color+Theme.swift in Sources */,
-				45D240972AF6C35500C5C65F /* MyTarotApp.swift in Sources */,
+				4566886C2AFFAF77009B9CB7 /* NavigationRouter.swift in Sources */,
+				455F7D3B2AFA795000E1F62B /* NativeAuthorizationPage.swift in Sources */,
+				456688502AFE6D4D009B9CB7 /* SceneDelegate.swift in Sources */,
+				45B96E662AFAB1C000F06917 /* OtpCodeBox.swift in Sources */,
+				456688522AFE7768009B9CB7 /* UIColor+Hex.swift in Sources */,
+				456688552AFF83D0009B9CB7 /* Coordinator.swift in Sources */,
+				456688782AFFC462009B9CB7 /* PhoneNubmer.swift in Sources */,
+				456688662AFFACBC009B9CB7 /* ProfileCoordinator.swift in Sources */,
+				456688722AFFB7E8009B9CB7 /* AuthCoordinator.swift in Sources */,
 				455F7D172AF93ECB00E1F62B /* CGFloat+CornerRadius.swift in Sources */,
-				455F7D1D2AF93FC500E1F62B /* AuthorizationView.swift in Sources */,
 				4509CA472AFFE00B00CECBD5 /* SegmentedPickerView.swift in Sources */,
 				450D62642AFA6A4600AD359E /* DailyCardView.swift in Sources */,
+				455F7D1D2AF93FC500E1F62B /* AuthorizationPage.swift in Sources */,
+				456688742AFFC439009B9CB7 /* PhoneNumberView.swift in Sources */,
+				45B96E6C2AFBC34E00F06917 /* PhoneNumberPage.swift in Sources */,
+				4566887D2B0103D1009B9CB7 /* TaroCardView.swift in Sources */,
+				45B96E642AFAB1AD00F06917 /* OtpCodeView.swift in Sources */,
+				456688592AFF841A009B9CB7 /* AppCoordinator.swift in Sources */,
+				456688572AFF83F0009B9CB7 /* AppTabBarController.swift in Sources */,
 				455F7D132AF937C400E1F62B /* Color+Hex.swift in Sources */,
+				45B96E622AFAB18F00F06917 /* OtpCodeVerificationViewModel.swift in Sources */,
+				4566887B2B00C608009B9CB7 /* TaroPredictionPage.swift in Sources */,
+				456688632AFFACA6009B9CB7 /* HistoryCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,7 +635,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = MyTarot/MyTarot.entitlements;
+				CODE_SIGN_ENTITLEMENTS = MyTarot/Resources/MyTarot.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -346,8 +643,8 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTarot/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -375,7 +672,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = MyTarot/MyTarot.entitlements;
+				CODE_SIGN_ENTITLEMENTS = MyTarot/Resources/MyTarot.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -383,8 +680,8 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTarot/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
