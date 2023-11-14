@@ -1,5 +1,5 @@
 //
-//  AuthorizationView.swift
+//  AuthorizationPage.swift
 //  MyTarot
 //
 //  Created by bekabeshka on 06.11.2023.
@@ -8,7 +8,9 @@
 import SwiftUI
 import AuthenticationServices
 
-struct AuthorizationView: View {
+struct AuthorizationPage: View {
+    var authorize: VoidCallback?
+    
     var body: some View {
         ZStack() {
             Color.Background.black.ignoresSafeArea()
@@ -21,16 +23,19 @@ struct AuthorizationView: View {
                         appleAuthorize()
                     }
                 ))
-                .background(Color.Background.black)
-                .foregroundColor(Color.Background.black)
+                .background(Color.Background.white)
+                .foregroundColor(.Background.black)
                 .cornerRadius(.cornerRadius)
                     
-                PrimaryButton(viewData: PrimaryButtonViewData(text: "Sign In with Apple"))
-                    .background(Color.Background.gray)
-                    .foregroundColor(Color.Text.white)
-                    .cornerRadius(.cornerRadius)
+                PrimaryButton(viewData: PrimaryButtonViewData(
+                    text: "Sign In with Apple",
+                    action: authorize
+                ))
+                .background(Color.Background.gray)
+                .foregroundColor(.Background.white)
+                .cornerRadius(.cornerRadius)
             }
-            .padding(Constants.insets)
+            .padding(.screenInsets)
         }
     }
     
@@ -42,15 +47,11 @@ struct AuthorizationView: View {
         let authorizationController = ASAuthorizationController(authorizationRequests: [request])
         authorizationController.performRequests()
     }
-    
-    private enum Constants {
-        static let insets = EdgeInsets(top: 0, leading: 16, bottom: 24, trailing: 16)
-    }
 }
 
-struct AuthorizationView_Previews: PreviewProvider {
+struct AuthorizationPage_Previews: PreviewProvider {
     static var previews: some View {
-        AuthorizationView()
+        AuthorizationPage()
     }
 }
 
