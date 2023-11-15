@@ -25,15 +25,6 @@ final class SceneDelegate: UIResponder, UISceneDelegate {
     }
 }
 
-struct HomeView: View {
-    var action: (() -> Void)?
-    var body: some View {
-        Button(action: action ?? { }, label: {
-            Text("Home button")
-        })
-    }
-}
-
 struct HistoryView: View {
     var body: some View {
         Text("History screen")

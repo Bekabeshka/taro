@@ -17,7 +17,7 @@ final class HomeCoordinator: Coordinator {
     }
     
     func start() {
-        let homeViewController = HomeView().viewController
+        let homeViewController = MainView().viewController
         router.setRootModule(homeViewController)
     }
 }
