@@ -20,7 +20,6 @@ final class AppCoordinator: Coordinator {
     }
     
     func start() {
-        preparedViewControllers.append(UIHostingController(rootView: TaroPredictionPage()))
         _ = configureHomeCoordinator()
         _ = configureHistoryCoordinator()
         _ = configureProfileCoordinator()

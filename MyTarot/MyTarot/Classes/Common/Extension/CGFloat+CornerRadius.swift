@@ -9,4 +9,6 @@ import Foundation
 
 extension CGFloat {
     static let cornerRadius: CGFloat = 8
+    static let rectangleBadgeCR: CGFloat = 4
+    static let badgeCR: CGFloat = 100
 }
