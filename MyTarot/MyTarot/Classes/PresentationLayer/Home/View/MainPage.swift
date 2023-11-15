@@ -1,5 +1,5 @@
 //
-//  MainView.swift
+//  MainPage.swift
 //  MyTarot
 //
 //  Created by Ilushk on 07.11.2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MainView: View {
+struct MainPage: View {
     let userGreetingViewData = UserGreetingViewData(image: "user-pic", text: "Hey, Amanda")
     let dailyCardViewData = DailyCardViewData(header: "Card of the day", subHead: "You have new card!", badgeText: "New")
     let cardCellViewData = CardCellViewData(
@@ -69,9 +69,8 @@ private enum Constants {
     static let insets = EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16)
 }
 
-struct MainView_Previews: PreviewProvider {
+struct MainPage_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        MainPage()
     }
 }
-

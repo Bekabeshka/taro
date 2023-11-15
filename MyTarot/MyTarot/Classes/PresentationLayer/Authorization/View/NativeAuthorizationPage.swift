@@ -30,12 +30,13 @@ struct NativeAuthorizationPage: View {
                         self.phoneNumber = phoneNumber
                     }
                     Spacer()
-                    PrimaryButton(viewData: PrimaryButtonViewData(text: "Send Code") {
-                        if let phoneNumber { didTapSendCode?(phoneNumber) }
-                    })
+                    PrimaryButton(viewData: PrimaryButtonViewData(text: "Send Code"))
                     .foregroundColor(.Background.white)
                     .background(Color.Background.gray)
                     .cornerRadius(.cornerRadius)
+                    .onTapGesture {
+                        if let phoneNumber { didTapSendCode?(phoneNumber) }
+                    }
                 }
                 .padding(.screenInsets)
             }
