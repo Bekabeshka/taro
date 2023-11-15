@@ -17,7 +17,7 @@ final class HomeCoordinator: Coordinator {
     }
     
     func start() {
-        let homeViewController = MainView().viewController
+        let homeViewController = TaroPredictionPage().viewController
         router.setRootModule(homeViewController)
     }
 }
